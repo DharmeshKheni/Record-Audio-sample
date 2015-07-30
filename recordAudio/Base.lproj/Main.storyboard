@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="recordAudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aek-fV-vPc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G0-AG-aIx">
+                                <rect key="frame" x="233" y="28" width="135" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Dzl-WS-Gk1"/>
+                                    <constraint firstAttribute="height" constant="87" id="mJ2-AP-6iI"/>
+                                </constraints>
+                                <state key="normal" title="RecordAudio" backgroundImage="300px-Button_Icon_Black.svg.png">
+                                    <color key="titleColor" red="0.037248883928571397" green="0.037248883928571397" blue="0.037248883928571397" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FF-q1-zJS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y46-qv-rBe">
+                                <rect key="frame" x="233" y="493" width="135" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="hfB-Cj-zZR"/>
+                                </constraints>
+                                <state key="normal" title="PlayAudio" backgroundImage="300px-Button_Icon_Black.svg.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHV-8e-xw2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NC-Uy-lEY">
+                                <rect key="frame" x="233" y="256" width="135" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="eX6-sw-Cxv"/>
+                                </constraints>
+                                <state key="normal" title="StopAudio" backgroundImage="300px-Button_Icon_Black.svg.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jnQ-oF-dP1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aek-fV-vPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="80w-Xn-i8g"/>
+                            <constraint firstAttribute="trailing" secondItem="aek-fV-vPc" secondAttribute="trailing" id="FM0-DU-MzC"/>
+                            <constraint firstItem="5NC-Uy-lEY" firstAttribute="leading" secondItem="6G0-AG-aIx" secondAttribute="leading" id="L2T-Vh-hRY"/>
+                            <constraint firstItem="aek-fV-vPc" firstAttribute="centerX" secondItem="6G0-AG-aIx" secondAttribute="centerX" id="Pjg-fu-KKT"/>
+                            <constraint firstItem="5NC-Uy-lEY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="Xde-nI-Qom"/>
+                            <constraint firstItem="Y46-qv-rBe" firstAttribute="trailing" secondItem="5NC-Uy-lEY" secondAttribute="trailing" id="Y3z-ye-Ir9"/>
+                            <constraint firstAttribute="bottom" secondItem="Y46-qv-rBe" secondAttribute="bottom" constant="20" symbolic="YES" id="Yts-iK-QaT"/>
+                            <constraint firstItem="6G0-AG-aIx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="YyB-ZH-RU4"/>
+                            <constraint firstItem="aek-fV-vPc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gGc-Ov-Hmu"/>
+                            <constraint firstItem="aek-fV-vPc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jhu-34-Ita"/>
+                            <constraint firstItem="5NC-Uy-lEY" firstAttribute="leading" secondItem="Y46-qv-rBe" secondAttribute="leading" id="tPL-2Z-YsD"/>
+                            <constraint firstItem="6G0-AG-aIx" firstAttribute="trailing" secondItem="5NC-Uy-lEY" secondAttribute="trailing" id="xn3-6w-6Ww"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="Y46-qv-rBe" id="9iH-D3-EVQ"/>
+                        <outlet property="recordButton" destination="6G0-AG-aIx" id="Frb-cQ-KwY"/>
+                        <outlet property="stopButton" destination="5NC-Uy-lEY" id="iJb-Mo-HVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2.jpg" width="1080" height="1920"/>
+        <image name="300px-Button_Icon_Black.svg.png" width="300" height="300"/>
+    </resources>
+</document>
